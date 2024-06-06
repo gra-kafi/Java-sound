@@ -17,18 +17,8 @@ public class Sound{
         soundURL[1] = getClass().getResource("/Sound/Click.wav");
 
         soundURL[2] = getClass().getResource("/Sound/Error.wav");
-//
-//        soundURL[3] = getClass().getResource("/Sound/Knife.wav");
-//
-//        soundURL[4] = getClass().getResource("/Sound/Machinegun.wav");
-//
-//        soundURL[5] = getClass().getResource("/Sound/Reload.wav");
-//
-//        soundURL[6] = getClass().getResource("/Sound/Riffle.wav");
-//
-//        soundURL[7] = getClass().getResource("/Sound/Shotgun.wav");
-//
-//        soundURL[8] = getClass().getResource("/Sound/Sniper.wav");
+
+        soundURL[3] = getClass().getResource("/Sound/Knife.wav");
 
 
         if (soundURL[0] == null) {
@@ -42,30 +32,7 @@ public class Sound{
         if (soundURL[2] == null) {
             throw new IllegalArgumentException("Sound file no 2 does not found ");
         }
-//
-//        if (soundURL[3] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
-//
-//        if (soundURL[4] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
-//
-//        if (soundURL[5] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
-//
-//        if (soundURL[6] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
-//
-//        if (soundURL[7] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
-//
-//        if (soundURL[8] == null) {
-//            throw new IllegalArgumentException("Sound file no 1 does not found ");
-//        }
+
 
     }
     public static void setFile(int i){
@@ -104,7 +71,6 @@ public class Sound{
         }
     }
 
-    // sound ------> play , stop
 
     public static void playMusic(int i){
         setFile(i);
@@ -122,6 +88,5 @@ public class Sound{
         play();
     }
 
-    // sound -> play , stop -----> end
 }
 
